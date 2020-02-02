@@ -27,18 +27,19 @@ namespace grasmanek94.IncreasedDiggerBuilderLimits
             }
 
             int factor = 10;
-            string config = Path.Combine(assemblyPath, "factor.txt");
+            string config = Path.Combine(Path.GetDirectoryName(assemblyPath), "factor.txt");
             if (File.Exists(config))
             {
                 string data = File.ReadAllText(config);
                 if(!int.TryParse(data, out factor))
                 {
-                    Log.Write("IncreasedDiggerBuilderLimits: Failed to parse factor.txt");
+                    Log.WriteError("IncreasedDiggerBuilderLimits: Failed to parse factor.txt");
                 } else {
-                    factor = Math.Clamp(factor, 1, int.MaxValue / largestNumber);
-                    Log.Write("IncreasedDiggerBuilderLimits: custom factor = {0}", factor);
+                    factor = Math.Clamp(factor, 1, int.MaxValue / largestNumber); 
                 }             
             }
+
+            Log.Write("IncreasedDiggerBuilderLimits: factor = {0}", factor);
 
             // Builder Limits
             keys = new List<string>(ConstructionManager.BuilderLimits.Keys);
