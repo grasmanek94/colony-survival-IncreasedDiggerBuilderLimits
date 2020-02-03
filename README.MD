@@ -3,6 +3,7 @@ This Colony Survival mod increases the Builder and Digger area limits by a facto
 Mod compatibility:   
 
 - `0.7.1`
+- `0.7.2`
 
 Notes:
 
