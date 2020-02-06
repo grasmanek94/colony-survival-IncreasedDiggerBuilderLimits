@@ -7,15 +7,26 @@
 		"enabled": true,
 		"marksgamemodded": true,
 		"name": "grasmanek94.IncreasedDiggerBuilderLimits",
-		"version": "0.0.2",
+		"version": "0.0.3",
 		"website": "https://github.com/grasmanek94/colony-survival-IncreasedDiggerBuilderLimits",
-		"about": "Increases the Builder and Digger area limits by a factor 10 (default, customizable in factor.txt)",
+		"about": "Increases the Builder and Digger area limits by a factor 10 (default, customizable in config.json)",
 		"patchnotes": [
 			{
-				"version": "0.0.2.0",
+				"version": "0.0.1",
 				"notes": [
-					"Initial Release",
+					"Initial Release"
+				]
+			},
+			{
+				"version": "0.0.2",
+				"notes": [
 					"Fix reading of factor.txt"
+				]
+			},
+			{
+				"version": "0.0.3",
+				"notes": [
+					"Include adjustment of other limits related to digging/building from withing config.json"
 				]
 			}
 		],

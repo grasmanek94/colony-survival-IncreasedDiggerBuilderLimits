@@ -1,0 +1,20 @@
+{
+	"Banner" : {
+		"LoadedChunksRadius" : 384,
+		"MaximumZombieSpawnRadius" : 300,
+		"SafeRadiusMaximum" : 200,
+		"SafeRadiusMinimum" : 60
+	},
+	"Colony" : {
+		"ExclusiveRadius" : 384
+	},
+	"NPCs" : {
+		"BuilderCooldownMultiplierSeconds" : 0.005,
+		"DiggerCooldownMultiplierSeconds" : 0.005
+	},
+    "grasmanek94" : {
+        "IncreasedDiggerBuilderLimits" : {
+            "Factor": 10
+        }
+    }
+}

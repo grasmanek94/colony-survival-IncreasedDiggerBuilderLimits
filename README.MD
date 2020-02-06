@@ -7,9 +7,9 @@ Mod compatibility:
 
 Notes:
 
-Don't forget to update your `gamedata/settings/server.json`:
+Don't forget to update the mod `config.json`:
 
 - `Banner.LoadedChunksRadius` to prevent chunk unloading
-- `NPCs.BuilderCooldownMultiplierSeconds` to decrease the time it takes to build (lower number)
-- `NPCs.DiggerCooldownMultiplierSeconds` to decrease the time it takes to dig (lower number)
+- `NPCs.BuilderCooldownMultiplierSeconds` to decrease or increase the time it takes to build (lower number = faster)
+- `NPCs.DiggerCooldownMultiplierSeconds` to decrease or increase the time it takes to dig (lower number = faster)
 - `Colony.ExclusiveRadius` to be able to use the new (bigger) area sizes
